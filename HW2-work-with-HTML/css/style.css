@@ -4,6 +4,7 @@ body {
     color: white;
     background-image: url(../img/pic.jpg); 
     background-size: cover;
+    background-attachment:fixed
 }
 h1 {
     border-bottom: solid;
