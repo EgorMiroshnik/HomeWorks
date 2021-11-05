@@ -1,0 +1,21 @@
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+    background-image: url(../img/pic.jpg); 
+    background-size: cover;
+}
+h1 {
+    border-bottom: solid;
+}
+a {
+    text-decoration: none;
+    color: rgb(201, 184, 184);
+}
+a:hover {
+    color: rgba(223, 78, 90, 0.377);
+
+}
+img {
+    width: 300px;
+}
