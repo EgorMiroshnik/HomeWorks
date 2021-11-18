@@ -160,6 +160,9 @@ footer {
 .get-in-touch img {
     margin-top: 22px;
 }
+.get-in-touch a {
+    margin-bottom: 11px;
+}
 .address {
     margin-left: 250px;
 }
