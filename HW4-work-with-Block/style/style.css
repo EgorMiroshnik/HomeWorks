@@ -144,6 +144,7 @@ footer {
     align-items: flex-start;
     padding: 0;
     background: #FAFAFA;
+    padding-top: 85px;
 }
 .services,
 .get-in-touch {
