@@ -1,0 +1,932 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@400;500;600;700;800&family=Open+Sans&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.wrapper {
+    padding: 25px 80px;
+    max-width: 1470px;
+    font-family: Montserrat;
+    font-style: normal;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+header {
+    margin-bottom: 115px;
+}
+.blu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+}
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
+
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    font-weight: 600;
+    color: black;
+    margin-left: 80px;
+}
+.contact {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+.nav-button1 {
+    background: url(../img/carbon_email.png) no-repeat center;
+    width: 40px;
+    height: 40px;
+    border: 1px dashed grey;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.nav-button2 {
+    background: url(../img/phone_Icon.png) no-repeat center;
+    width: 40px;
+    height: 40px;
+    border: 1px dashed grey;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.nav-button1:hover,
+.nav-button2:hover {
+    background-color: #FF7A00;
+    transition: 0.5s;
+}
+.nav-button1:active,
+.nav-button2:active{
+    background-color: orangered;
+}
+.nav-button3 {
+    width: 218px;
+    height: 52px;
+    border: none;
+    background-color: #FF7A00;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.nav-button3:hover {
+    background-color: #2B7AF1;
+    transition: 0.5s;
+    box-shadow: 0px 2px 15px 0px orangered;
+}
+.nav-button3:active{
+    background-color: orangered;
+}
+nav a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+    font-family: Montserrat;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav a:active {
+    color: gray;
+}
+.contact a {
+    color: white;
+}
+.header-info {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto; 
+    gap: 20px;
+}
+
+.header-info-text {
+    margin-left: 80px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.header-info-img {
+    grid-column-start: 3;
+    grid-column-end: 7;
+}
+.header-info-text h1 {
+    width: 413px;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 100px;
+}
+.header-info-text p {
+    margin-top: 20px;
+    height: 66px;
+    width: 413px;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+}
+.header-info-text button {
+    margin-top: 60px;
+    width: 251px;
+    height: 52px;
+    background-color: #FF7A00;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.header-info-text button:hover {
+    background-color: #2B7AF1;
+    transition: 0.5s;
+}
+.header-info-text button:active {
+    background-color: orangered;
+} 
+.header-info-img img {
+    margin-left: -256px;
+}
+.header-info-ability {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 305px;
+    height: 223px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px grey;
+}
+.header-info-ability1 {
+    margin-left: 80px;
+}
+.header-info-ability1 p,
+.header-info-ability2 p,
+.header-info-ability3 p,
+.header-info-ability4 p {
+    margin-top: 32px;
+    height: 66px;
+    width: 200px;
+    font-family: Open Sans;
+    text-align: center;
+}
+.header-info-ability3 p {
+    width: 250px
+}
+.tittle-main {
+    width: 320px;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 44px;
+    color: #2B7AF1;
+    margin-bottom: 40px;
+    margin-left: 80px;
+}
+.offer {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 311px 300px;
+    margin-bottom: 60px;  
+    margin-left: 80px;
+}
+.offer1 {
+    background: url(../img/img-main/offer1.png) no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-size: cover;
+    border-radius: 10px;
+}
+.offer1 h3 {
+    margin-top: 116px;
+    margin-left: 28px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px;
+}
+.price-offer1 {
+    margin-top: 65px;
+    margin-left: 28px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 22px;
+}
+.location {
+    margin-top: 25px;
+    margin-left: 29px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: Montserrat;
+}
+.location img {
+    margin-right: 13.55px;
+}
+.button-offer1 {
+    width: 126px;
+    height: 33px;
+    border: none;
+    border-radius: 25px;
+    background-color: #FF7A00;
+    color: white;
+    cursor: pointer;
+    margin-left: 273px;
+    font-family: Montserrat;
+}
+.button-offer1:hover {
+    background-color: #2B7AF1;
+    transition: 0.5s;
+}
+.button-offer1:active {
+    background-color: tomato;
+}
+.offer2 {
+    background: url(../img/img-main/offer2.png) no-repeat;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-size: cover;
+    border-radius: 10px;
+}
+.offer2 h3 {
+    margin-top: 116px;
+    margin-left: 28px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px;
+}
+.button-offer2 {
+    width: 126px;
+    height: 33px;
+    border: none;
+    border-radius: 25px;
+    background-color: #FF7A00;
+    color: white;
+    cursor: pointer;
+    margin-left: 50px;
+    font-family: Montserrat;
+    margin-right: 10px;
+}
+.button-offer2:hover {
+    background-color: #2B7AF1;
+    transition: 0.5s;
+}
+.button-offer2:active {
+    background-color: tomato;
+}
+.offer3 {
+    background: url(../img/img-main/offer3.png) no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.offer3 h3 {
+    margin-top: 65px;
+    margin-left: 28px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px;
+}
+.new-apartment {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 133px;
+    padding: 8px 15px;
+    background-color: #5CB85C;
+    border-radius: 20px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+.offer4 {
+    background: url(../img/img-main/offer4.png) no-repeat;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-size: cover;
+    border-radius: 10px;
+}
+.offer4 h3 {
+    margin-top: 116px;
+    margin-left: 28px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px;
+}
+.offer4>div>p {
+    width: 240px;
+}
+
+.button-offer4 {
+    margin-left: 336px;
+}
+.button-all {
+    width: 304px;
+    height: 50px;
+    background-color: #FF7A00;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-family: Montserrat;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0px 500px 106px 500px;
+}
+.button-all:hover {
+    background-color: #2B7AF1;
+    transition: 0.5s;
+}
+.button-all:active {
+    background-color: tomato;
+}
+/* Section About us */
+
+.about-us {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    justify-items: flex-end;
+    align-items: flex-end;
+    margin-left: 80px;
+    
+}
+.about-us-text p {
+    width: 433px;
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: 25px;
+}
+.about-us-icon img {
+    grid-row: span 2;
+}
+.about-us-text {
+    margin-right: 75px;
+}
+.about-us-icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.tittle-about-us-text {
+font-family: Montserrat;
+font-size: 36px;
+font-weight: 800;
+color: #2B7AF1;
+margin-bottom: 40px;
+}
+.about-us-icon h2 {
+width: 72px;
+font-family: Montserrat;
+font-size: 36px;
+font-weight: 800;
+line-height: 44px;
+color: #2B7AF1
+}
+.about-us-icon p {
+width: 81px;
+font-family: Manrope;
+font-size: 18px;
+}
+
+
+.gradient {
+    margin-top: 100px;
+}
+
+/* Section Contacts */
+
+.our-contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 80px;
+}
+.maps {
+    grid-row: span 2;
+    margin-top: 100px;
+}
+.our-cont-tittle {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 800;
+    color: #2B7AF1;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+.our-contacts1 a {
+    display: flex;
+    align-items: center;
+}
+.our-contacts1 button {
+    margin-right: 20px;
+}
+.cont-button1 {
+    width: 40px;
+    height: 40px;
+    background: url(../img/img-contacts/Vector\ \(2\).png) no-repeat center;
+    background-color: #2B7AF1;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.cont-button2 {
+    width: 40px;
+    height: 40px;
+    background: url(../img/img-contacts/carbon_email.png) no-repeat center;
+    background-color: #2B7AF1;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.cont-button3 {
+    width: 40px;
+    height: 40px;
+    background: url(../img/img-contacts/phone.png) no-repeat center;
+    background-color: #2B7AF1;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.our-contacts1 a {
+    text-decoration: none;
+    color: #111111;
+    font-family: Montserrat;
+    cursor: pointer;
+}
+.our-contacts1 a:hover {
+    text-decoration: underline;
+}
+.our-contacts1 a:active {
+    color: gray;
+}
+.instagram {
+    display: flex;
+    align-items: center;
+}
+.vk {
+    display: flex;
+    align-items: center;
+}
+.cont-button4 {
+    background: url(../img/img-contacts/instagram.png) no-repeat center;
+    width: 40px;
+    height: 40px;
+    background-color: #2B7AF1;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.cont-button5{
+    background: url(../img/img-contacts/vk.png) no-repeat center;
+    width: 40px;
+    height: 40px;
+    background-color: #2B7AF1;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.cont-button:hover {
+    transition: 0.5s;
+    background-color: #FF7A00;
+}
+.cont-button:active {
+    background-color: tomato;
+}
+.instagram p,
+.vk p {
+    height: 22px;
+    width: 142px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+.our-contacts2 {
+    margin-top: 110px;
+}
+.our-contacts2 p {
+    margin-right: auto;
+}
+.our-contacts2 .button-vk,
+.button-inst {
+    margin-right: 40px;
+    width: 158px;
+    height: 33px;
+    background-color: #FF7A00;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-family: Montserrat;
+    cursor: pointer;
+}
+.our-contacts2 .button-vk:hover,
+.button-inst:hover {
+    background-color: #2B7AF1;
+    transition: 0.5s;
+}
+
+/* Reviews */
+.bg-blue {
+    position: relative;
+    width: 1400px;
+    height: 649px;
+    background: #2b7af1;
+    z-index: 0;
+    padding: 100px 20px;
+}
+.bg-blue-img {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    z-index: -2;
+}
+.bg-blue h2 {
+    margin-left: 50px;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+.reviews-text {
+    display: grid;
+    margin-top: 40px;
+    margin-left: 50px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.reviews-text-block {
+    border: none;
+    border-radius: 10px;
+    height: 300px;
+    background-color: white;
+    z-index: 0;
+    padding: 40px 40px;
+}
+.arrow {
+    position: relative;
+    top: 85px;
+    right: 310px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background: url(../img/arrow1.png) no-repeat center;
+    background-color: #FF7A00;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.arrow-rigth {
+    position: relative;
+    top: 85px;
+    left: 335px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background: url(../img/arrow-right.png) no-repeat center;
+    background-color: #FF7A00;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.arrow:hover,
+.arrow-rigth:hover {
+    background-color: #2B7AF1;
+    transition: 0.5s;
+    box-shadow: 0px 2px 15px 0px orangered;
+}
+.arrow:active,
+.arrow-rigth:active {
+    background-color: tomato;
+    box-shadow: 0px 2px 15px 0px orangered;
+}
+.reviews-text-block {
+    display: grid;
+    grid-template-columns: 232px 147px 121px;
+    grid-template-rows: 24px 88px 39px;
+    grid-template-areas: 
+    "h . img"
+    "p p p"
+    "adr . d";
+    gap: 20px;
+}
+.reviews-text-tittle {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    grid-area: h;
+    color: #2B7AF1;
+}
+.reviews-text-img {
+    grid-area: img;
+}
+.reviews-text-info {
+    grid-area: p;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.reviews-text-address {
+    grid-area: adr;
+    display: flex;
+    flex-direction: column;
+}
+.reviews-text-name {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    color: #2B7AF1;
+}
+.reviews-text-sity {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.reviews-text-date {
+    grid-area: d;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 17px;
+}
+.bg-blue>div>button {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.div-button {
+    margin-left: 680px;
+    margin-top: 60px;
+}
+.bg-blue>div>button:hover,
+.bg-blue>div>button:hover {
+    background-color: orangered;
+    transition: 0.5s;
+    box-shadow: 0px 2px 15px 0px orangered;
+}
+.bg-blue>div>button:active,
+.bg-blue>div>button:active {
+    background-color: tomato;
+    box-shadow: 0px 2px 15px 0px orangered;
+}
+
+/* feedback */
+
+.feedback {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+.feedback-block {
+    width: 393px;
+    height: 451px;
+    background-color: white;
+    box-shadow: 0px 1px 15px 0px grey;
+    /* margin-top: 100px; */
+    margin-left: 188px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feedback-block h3 {
+    margin-top: 40px;
+    margin-bottom: 24px;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2B7AF1;
+
+}
+.feedback-block-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form>input {
+    border-radius: 10px;
+    height: 42px;
+    border: 1px solid #11111180;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 313px;
+}
+form>textarea {
+    width: 313px;
+    resize: none;
+    height: 115px;
+    border: 1px solid #11111180;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 24px;
+}
+.feedback-block-form button {
+    margin-top: 24px;
+    width: 152px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: #FF7A00;
+    color: white;
+    font-family: Montserrat;
+    cursor: pointer;
+}
+.feedback-block-form button:hover {
+    background-color: #2B7AF1;
+    transition: 0.5s;
+}
+.feedback-block-form button:active {
+    background-color: tomato;
+    box-shadow: 0px 2px 15px 0px orangered;
+}
+.feedback-text {
+    width: 600px;
+    position: relative;
+    margin-left: 40px;
+}
+.feedback-text-img {
+    position: absolute;
+    left: -45px;
+}
+.feedback-text-p {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 100px;
+    width: 703px;
+    left: 665px;
+    top: 3741px;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.feedback-text h4 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2B7AF1;
+}
+.feedback-text-p1 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+/* Footer */
+
+
+.bg-footer {
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+}
+.footer-main {
+    margin-left: 80px;
+    margin-top: 220px;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+}
+.footer-menu {
+    display: flex;
+    align-items: center;
+}
+.footer-menu a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.footer-contacts {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.footer-contacts a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.footer-contacts a:hover,
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+.footer-contacts a:active,
+.footer-menu a:active {
+    color: gray;
+}
+.footer-contacts-button1 {
+    background: url(../img/carbon_email1.png) no-repeat center;
+    background-color: #2B7AF1;
+}
+.footer-contacts-button2 {
+    background: url(../img/phone1.png) no-repeat center;
+    background-color: #2B7AF1;
+}
+.footer-application {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.footer-application1 {
+    background: url(../img/aplication/telegram.png) no-repeat center;
+    background-color: #2B7AF1;
+}
+.footer-application2 {
+    background: url(../img/aplication/facebook.png) no-repeat center;
+    background-color: #2B7AF1;
+}
+.footer-application3 {
+    background: url(../img/aplication/vk.png) no-repeat center;
+    background-color: #2B7AF1;
+}
+.footer-application4 {
+    background: url(../img/aplication/instagram.png) no-repeat center;
+    background-color: #2B7AF1;
+}
+.footer-application:hover {
+    transition: 0.5s;
+    background-color: #FF7A00;
+}
+.footer-application:active {
+    background-color: tomato;
+}
+.line-footer {
+    margin-left: 80px;
+}
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    margin-top: 25px;
+    color: white;
+}
+.footer-text1 {
+    font-size: 14px;
+    line-height: 17px;
+}
+.footer-text2 {
+    width: 297px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+}
