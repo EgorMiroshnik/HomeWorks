@@ -650,6 +650,9 @@ text-align: center;
     text-align: center;
 }
 }
+.lear-more-button:hover {
+    text-decoration: underline;
+}
 
 /* Footer */
 
