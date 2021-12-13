@@ -1,0 +1,123 @@
+.wrapper {
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.jedi-cont {
+    width: 100px;
+    height: auto;
+    display: inline-block;
+    transition: 1s;
+    transition-timing-function: cubic-bezier(0.42, 0, 1.0, 1.0);
+    cursor: pointer;
+    padding: 100px 100px;
+    margin-left: 36%;
+}
+.jedi-cont::before {
+    display: block;
+    content: "";
+    width: 200px;
+    transition: 1s ease-in-out;
+    height: 5px;
+    background: linear-gradient( 270deg, rgba(255, 255, 255, 1) 68%, rgba(0, 0, 0, 1) 69%, rgba(0, 0, 0, 1) 77%, rgba(0, 0, 0, 1) 84%, rgba(255, 255, 255, 1) 85%);
+}
+.jedi-cont::after {
+    display: block;
+    content: "";
+    width: 200px;
+    transition: 1s ease-in-out;
+    height: 5px;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 1) 68%, rgba(0, 0, 0, 1) 69%, rgba(0, 0, 0, 1) 77%, rgba(0, 0, 0, 1) 84%, rgba(255, 255, 255, 1) 85%);
+}
+.jedi {
+    width: 200px;
+    height: 5px;
+    margin: 10px 0;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 1) 13%, rgba(0, 0, 0, 1) 13%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 30%, rgba(255, 255, 255, 1) 30%);
+}
+.jedi-cont:hover .jedi {
+    visibility: hidden;
+}
+  .jedi-cont:hover::before {
+    transform:  rotate(-45deg);
+    box-shadow: 0px 0px 75px 10px rgb(252, 3, 3);
+}
+  .jedi-cont:hover::after {
+    transform: translateY(-27px) rotate(-135deg);
+    box-shadow: 0px 0px 75px 10px rgb(9, 219, 9);
+}
+
+/* Newton-cradle */
+
+
+.Newton-cradle {
+    background-color: rgb(207, 189, 189);
+    width: 100%;
+    height: 300px;
+}
+.ball-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 100px;
+    background-color: cadetblue;
+    box-shadow: 0px 72px 16px -16px rgb(0 0 0 / 40%);
+}
+.ball:first-child {
+    animation-name: ball-left;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.ball:last-child {
+    animation-name: ball-right;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes ball-left {
+    25% {
+    transform: translate(-50px, -50px);
+    box-shadow: 0px 112px 24px -18px rgb(0 0 0 / 40%);
+    }
+    50% {
+    transform: translate(0px, 0px);
+    box-shadow: 0px 72px 16px -16px rgb(0 0 0 / 40%);
+    }
+}
+  
+@keyframes ball-right {
+    50% {
+    transform: translate(0px, 0px);
+    box-shadow: 0px 72px 16px -16px rgb(0 0 0 / 40%);
+    }
+    75% {
+    transform: translate(50px, -50px);
+    box-shadow: 0px 112px 24px -18px rgb(0 0 0 / 40%);
+    }
+}
+.ball:first-child, 
+.ball:nth-child(2){
+    background: #7c48ee;
+}
+.ball:nth-child(3) {
+    background: linear-gradient(to right, #7c48ee, #d378d6);
+}
+.ball:nth-child(4) {
+    background: linear-gradient(to right, #d378d6, #d232a7);
+}
+.ball:nth-child(5) {
+    background: #d525a6;
+}
+.ball:nth-child(6) {
+    background: linear-gradient(to right, #d525a6, #df2457);
+}
+.ball:last-child {
+    background: #df2457;
+}
