@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header row justify-content-between mt-2">
+            <span class="col-2 align-items-center align-self-center">
+                <img class="" src="./img/inst.png" alt="inst">
+            </span>
+            <span class="col-3 align-items-center">
+                <input class="form-control me-2 col-3" type="search" placeholder="Search" aria-label="Search">
+            </span>
+            <span class="col-3 d-flex justify-content-end align-self-center">
+                <a class="ms-2" href="#">
+                    <svg   width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.1768 22H14.5175C14.1171 22 13.7666 21.6795 13.7666 21.3132V15.6816C13.7666 14.4912 12.7654 13.5754 11.4638 13.5754C10.1623 13.5754 9.16106 14.4912 9.16106 15.6816V21.3132C9.16106 21.6795 8.81064 22 8.41016 22H0.750907C0.350423 22 0 21.6795 0 21.3132V10.5536C0 10.3704 0.100121 10.1873 0.200242 10.0499L10.9632 0.206035C11.2636 -0.0686785 11.7141 -0.0686785 12.0145 0.206035L22.7775 10.0499C22.9778 10.2331 23.0779 10.5536 22.9277 10.7825C22.9277 10.8283 22.8776 10.8283 22.8776 10.8741V21.3132C22.9277 21.6795 22.5773 22 22.1768 22ZM15.2684 20.6264H21.4259V10.7367L11.5139 1.67118L1.50181 10.8283V20.6264H7.65925V15.6816C7.65925 13.7128 9.31125 12.2019 11.4638 12.2019C13.6164 12.2019 15.2684 13.7128 15.2684 15.6816V20.6264Z" fill="#262626"/>
+                    </svg>
+                </a>
+                <a class="ms-2" href="#">
+                    <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.5131 0H0.460947C0.0399037 0 -0.147226 0.509019 0.133469 0.786666L7.61868 8.09803L10.1917 18.6486C10.2853 19.0651 10.8467 19.1113 11.0338 18.7874L21.9341 0.694117C22.1213 0.370196 21.8874 0 21.5131 0ZM2.75329 1.38823H18.4254L8.69468 6.7098C8.50755 6.80234 8.27363 6.75607 8.13329 6.61725L2.75329 1.38823ZM11.0338 16.1035L9.1625 8.42195C9.11572 8.23685 9.20928 8.00548 9.39641 7.91293L19.174 2.54509L11.0338 16.1035Z" fill="#262626"/>
+                     </svg>  
+                     <span class="position-absolute top-4 translate-middle badge rounded-pill bg-danger">
+                        5
+                    </span>                      
+                </a>
+                <a class="ms-2" href="#">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0C17.0851 0 22 4.91489 22 11C22 17.0851 17.0851 22 11 22C4.91489 22 0 17.0851 0 11C0 4.91489 4.91489 0 11 0ZM11 20.5957C16.2894 20.5957 20.5957 16.2894 20.5957 11C20.5957 5.71064 16.2894 1.40426 11 1.40426C5.71064 1.40426 1.40426 5.71064 1.40426 11C1.40426 16.2894 5.71064 20.5957 11 20.5957ZM8.94043 9.50213C9.08085 9.26808 9.26808 9.08085 9.50213 8.94043L16.4298 5.14894C16.5702 5.10213 16.7106 5.10213 16.8043 5.19574C16.8979 5.28936 16.9447 5.42979 16.8511 5.57021L13.0596 12.4979C12.9191 12.7319 12.7319 12.9191 12.4979 13.0596L5.57021 16.8511C5.42979 16.8979 5.28936 16.8979 5.19574 16.8043C5.10213 16.7106 5.05532 16.5702 5.14894 16.4298L8.94043 9.50213ZM11.8426 11.8426L13.8553 8.19149L10.2043 10.2043L11.8426 11.8426Z" fill="#262626"/>
+                    </svg>
+                </a>
+                <a class="ms-2" href="#">
+                    <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8213 0C12.4979 0 11 2.4561 11 2.4561C11 2.4561 9.50213 0 6.17872 0C2.7617 0 0 2.96585 0 6.62683C0 10.2878 2.85532 12.3732 5.71064 14.8756C10.017 18.6756 10.2979 19 11 19C11.7021 19 11.983 18.6756 16.2894 14.8756C19.1915 12.3268 22 10.2415 22 6.62683C22 2.96585 19.2383 0 15.8213 0ZM15.3532 13.8098C12.8255 16.0341 11.4681 17.2854 11 17.5634C10.5319 17.239 8.84681 15.7561 6.64681 13.8098C4.07234 11.539 1.40426 9.63902 1.40426 6.58049C1.40426 3.70732 3.55745 1.3439 6.17872 1.3439C8.09787 1.3439 9.12766 2.27073 9.8766 3.29024C11.5617 5.65366 10.4383 5.65366 12.1234 3.29024C12.8723 2.27073 13.9021 1.3439 15.8213 1.3439C18.4426 1.3439 20.5957 3.70732 20.5957 6.58049C20.5957 9.68537 17.9277 11.5854 15.3532 13.8098Z" fill="#262626"/>
+                    </svg>
+                </a>
+                <a class="ms-2" href="#">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="11" fill="#4094EF"/>
+                    </svg>
+                </a>
+            </span>
+        </header>
+        <hr class="m-2 mb-4">
+        <div class="row align-items-start">
+            <img class="col-4 col-sm-3 col-lg-2 ms-lg-5" src="img/prof-l.png" alt="">
+            <div class="col-8 ms-lg-5">
+                <div class="d-flex">
+                    <h2 class="mb-0 me-2 me-sm-4">name</h2>
+                    <button class="btn bg-primary text-white me-2 px-2 px-sn-4 fw-bold">Follow</button>
+                    <button class="btn btn-primary align-items-center bg-primary text-white me-sm-2">
+                        <svg bg-white xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                        <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                        </svg>
+                    </button>
+                    <button class="btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="d-flex mt-3">
+                    <span class="me-2 me-sm-4">
+                        <b>79</b>
+                        posts
+                    </span>
+                    <span class="me-2 me-sm-4">
+                        <b>379</b>
+                        followers
+                    </span>
+                    <span>
+                        <b>179</b>
+                        following
+                    </span>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="mb-0 mt-3">
+                        <b>Name</b>
+                    </p>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                    </p>
+                    <a  class="text-decoration-none" href="#">bit.ly/35Ce3mX</a>
+                </div>
+            </div>
+        </div>
+        <div class="d-inline-flex col-4 mt-5">
+            <div class="text-center p-1 me-sm-3 ms-lg-5 me-lg-5">
+                <img class="" src="img/prof-m.png" alt="">
+                <br>
+                <b>Name</b>
+            </div>
+            <div class="text-center p-1 me-sm-3 me-lg-5">
+                <img class="" src="img/prof-m.png" alt="">
+                <br>
+                <b>Name</b>
+            </div>
+            <div class="text-center p-1 me-sm-3 p-1">
+                <img class="" src="img/prof-m.png" alt="">
+                <br>
+                <b>Name</b>
+            </div>
+        </div>
+        <hr class="m-2 mb-4">
+        <div class="row justify-content-center mb-4">
+            <div class="col-4 col-sm-2 d-flex align-items-center justify-content-center">
+                <img class="me-2" src="img/post.png" alt="">
+                <span class="">POSTS</span>
+            </div>
+            <div class="col-4 col-sm-2 d-flex align-items-center justify-content-center">
+                <img class="me-2" src="img/tagget.png" alt="">
+                <span class="">TAGGED</span>
+            </div>
+        </div>
+        <div class="row align-items-center mb-4">
+            <img class="col-4 user-photos" src="img/user-photos.png" alt="user photos">
+            <img class="col-4 user-photos" src="img/user-photos.png" alt="user photos">
+            <img class="col-4 user-photos" src="img/user-photos.png" alt="user photos">
+        </div>
+        <div class="row align-items-center mb-4">
+            <img class="col-4 user-photos" src="img/user-photos.png" alt="user photos">
+            <img class="col-4 user-photos" src="img/user-photos.png" alt="user photos">
+            <img class="col-4 user-photos" src="img/user-photos.png" alt="user photos">
+        </div>
+        <div class="row align-items-center mb-4">
+            <img class="col-4 user-photos" src="img/user-photos.png" alt="user photos">
+            <img class="col-4 user-photos" src="img/user-photos.png" alt="user photos">
+            <img class="col-4 user-photos" src="img/user-photos.png" alt="user photos">
+        </div>
+        <div class="row align-items-center mb-4">
+            <img class="col-4 user-photos" src="img/user-photos.png" alt="user photos">
+            <img class="col-4 user-photos" src="img/user-photos.png" alt="user photos">
+            <img class="col-4 user-photos" src="img/user-photos.png" alt="user photos">
+        </div>
+        <div class="row align-items-center mb-4">
+            <img class="col-4 user-photos" src="img/user-photos.png" alt="user photos">
+            <img class="col-4 user-photos" src="img/user-photos.png" alt="user photos">
+            <img class="col-4 user-photos" src="img/user-photos.png" alt="user photos">
+        </div>
+        <div class="row align-items-center mb-4">
+            <img class="col-4 user-photos" src="img/user-photos1.png" alt="user photos">
+            <img class="col-4 user-photos" src="img/user-photos1.png" alt="user photos">
+            <img class="col-4 user-photos" src="img/user-photos1.png" alt="user photos">
+        </div>
+    </div>
+</body>
+</html>

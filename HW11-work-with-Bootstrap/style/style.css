@@ -1,0 +1,12 @@
+.ms-2 path:hover {
+    fill: rgb(172, 53, 53);
+}
+.ms-2 path:active {
+    fill: rgb(244, 40, 40);
+}
+.user-photos {
+    cursor: pointer;
+}
+.user-photos:hover {
+    opacity: 0.2;
+}
